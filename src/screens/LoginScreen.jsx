@@ -31,7 +31,7 @@ export const LoginScreen = () => {
       router.replace(Navigation.Dashboard.Dashboard);
       toast.success("Login Successfull");
     } catch (error) {
-      toast.error(error?.message || "Login failed");
+      toast.error("Account not found");
     }
   };
 
